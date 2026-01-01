@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Intelligent File Search
+Comment=Search and index files using AI-powered semantic search
+Exec=/usr/local/bin/file-search
+Icon=file-search
+Terminal=false
+Categories=Utility;FileTools;System;
+Keywords=search;file;index;semantic;AI;
+StartupNotify=true

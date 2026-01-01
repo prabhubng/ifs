@@ -1,0 +1,46 @@
+{
+    "version": "1.0.0",
+    "database": {
+        "path": "file_index.db",
+        "auto_backup": false,
+        "backup_interval_days": 7
+    },
+    "indexing": {
+        "max_file_size_mb": 10,
+        "skip_hidden_files": true,
+        "skip_system_files": true,
+        "generate_embeddings": true,
+        "embedding_batch_size": 32,
+        "excluded_extensions": [
+            ".tmp", ".cache", ".log", ".bak"
+        ],
+        "excluded_directories": [
+            "node_modules", ".git", ".svn", "__pycache__",
+            "venv", "env", ".venv"
+        ]
+    },
+    "search": {
+        "default_mode": "fuzzy",
+        "max_results": 50,
+        "enable_semantic": true,
+        "similarity_threshold": 0.3
+    },
+    "ui": {
+        "theme": "default",
+        "window_width": 1200,
+        "window_height": 700,
+        "font_size": 10,
+        "show_hidden_files": false,
+        "auto_refresh_stats": true
+    },
+    "model": {
+        "name": "sentence-transformers/all-MiniLM-L6-v2",
+        "cache_dir": ".cache/models",
+        "device": "cpu"
+    },
+    "performance": {
+        "max_threads": 4,
+        "chunk_size": 1000,
+        "enable_progress_bar": true
+    }
+}
